@@ -1,0 +1,3 @@
+[submodule "Source/Nuxleus"]
+	path = Source/Nuxleus
+	url = git://github.com/3rdandUrban/Nuxleus.git
