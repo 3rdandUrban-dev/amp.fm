@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<view:module type="application/atomictalk+xhtml" xmlns="http://www.w3.org/1999/xhtml" xmlns:menu="http://atomictalk.org/page/view/menu" xmlns:view="http://atomictalk.org/page/view" xmlns:doc="http://atomictalk.org/feed/doc">
+  <div id="timespan-container"  class="four-rounded-corners" style="text-align:left;">
+        <menu:navigation id="timespan"
+            match="$servicedoc:*//app:workspace/app:collection[atom:title = '@@location.label@@']/app:categories"
+            use="atom:category" selected="@@current.title@@" type="TtoB"/>
+    </div>
+</view:module>

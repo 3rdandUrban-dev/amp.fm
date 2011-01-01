@@ -1,0 +1,44 @@
+ul.playlist {
+    margin:0px;
+    padding:5px;
+    width:auto;
+}
+ul.playlist li {
+    margin-bottom:2px;
+}
+ul.playlist li {
+/* assume all items will be sounds rather than wait for onload etc. in this example.. may differ for your uses. */
+    height:auto;
+    background-color:#CCC;
+    color:#FFF;
+    padding:5px 20px;
+    width:auto;
+    text-decoration:none;
+}
+ul.playlist li:hover, ul.playlist li:hover a {
+    background-color:#999;
+    color:#FFF;
+}
+ul.playlist li a.sm2_link {
+    padding:0px;
+    width:100%;
+    text-decoration:none;
+    font-weight:bold;
+    color:#FFF;
+    -webkit-transition-property: hover;
+    -webkit-transition: all 0.15s ease-in-out;
+}
+ul.playlist li a.sm2_paused:hover,
+ul.playlist li a.sm2_link:hover {
+    background-color:#999;
+    color:#FFF;
+}
+ul.playlist li a.sm2_paused {
+    background-color:#666;
+    color:#FFF;
+}
+ul.playlist li a.sm2_playing,
+ul.playlist li a.sm2_playing:hover {
+    background-color:#336699;
+    color:#FFF;
+}

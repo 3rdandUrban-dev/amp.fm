@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<view:module type="xhtml" xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:view="http://atomictalk.org/page/view">
+    <div id="timespan-container"  class="four-rounded-corners">
+        <ul style="text-align:left;" class="menu TtoB" id="timespan-menu">
+            <li id="today-selector" class="selected">
+                <a class="render-content" id="today" href="#event-listing-container">Today</a>
+            </li>
+            <li id="next-3-days-selector" class="not-selected">
+                <a class="render-content" id="next-3-days" href="#event-listing-container">Next 3 Days</a>
+            </li>
+            <li id="week-selector" class="not-selected">
+                <a class="render-content" id="week" href="#event-listing-container">Week</a>
+            </li>
+            <li id="weekend-selector" class="not-selected">
+                <a class="render-content" id="weekend" href="#event-listing-container">Weekend</a>
+            </li>
+            <li id="month-selector" class="not-selected">
+                <a class="render-content" id="month" href="#event-listing-container">Month</a>
+            </li>
+            <li id="popular-selector" class="not-selected">
+                <a class="render-content" id="popular" href="#event-listing-container">Popular</a>
+            </li>
+        </ul>
+    </div>
+    <view:module src="/page/view/menu/navigation/sub-nav/base.xml"/>
+</view:module>

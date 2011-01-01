@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<view:module type="xhtml" xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:view="http://atomictalk.org/page/view">
+    <div id="facebook-login" style="text-align:center;margin-top:35px;">
+        <a href="#" class="facebook-login">
+            <img id="fb_login_image"
+                src="http://static.ak.fbcdn.net/images/fbconnect/login-buttons/connect_light_medium_long.gif"
+                alt="Connect"/>
+        </a>
+    </div>
+</view:module>

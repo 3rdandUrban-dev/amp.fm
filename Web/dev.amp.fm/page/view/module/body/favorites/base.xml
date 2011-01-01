@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<view:module xmlns:menu="http://atomictalk.org/page/view/menu"
+  xmlns:view="http://atomictalk.org/page/view" xmlns:doc="http://atomictalk.org/feed/doc"
+  xmlns:fb="http://www.facebook.com/2008/fbml" class="base" id="body-base">
+  <view:container>
+    <div id="loading">Loading...</div>
+    <ul id="center" class="menu TtoB">
+      <view:module id="body" src="/page/view/menu/navigation/base.xml"/>
+      <view:module id="body" src="/page/view/module/search/base.xml"/>
+      <li id="content-container">
+        <div id="left-container" class="four-rounded-corners">
+          <div/>
+        </div>
+        <div id="center-container">
+          <div id="filter-container" class="four-rounded-corners">
+            <h3>@@current.title@@</h3>
+          </div>
+          <doc:calendar user="@@current.user@@"/>
+        </div>
+        <div id="right-container" class="four-rounded-corners">
+          <!--<view:module id="body" src="/page/view/module/facebook/base.xml"/>-->
+          <!--<view:module id="body" src="/page/view/module/timespan/base.xml"/>-->
+          <view:module id="body" src="/page/view/menu/navigation/top-nav/base.xml"/>
+        </div>
+      </li>
+      <view:module id="body" src="/page/view/module/footer/base.xml"/>
+    </ul>
+  </view:container>
+</view:module>

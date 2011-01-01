@@ -1,0 +1,1990 @@
+body
+{
+    background-color: #F4F4ED;
+    background-color: #F1F1F1;
+    background-attachment: fixed;
+    color: #333;
+    font-family: Verdana,Geneva,Helvetica,Arial,sans-serif;
+    font-size: small;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+#transparent-top-bar-container
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 975px;
+    height: 72px;
+    z-index: 0;
+    margin: 0 auto;
+    border: 1px solid #FFF;
+    border-top: 0;
+    background-color: #EEE;
+}
+#transparent-top-bar-container .internal
+{
+    width: 100%;
+    height: 75px;
+    background-color: #FFF;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+#transparent-background
+{
+    /* position:absolute; top: 0px; left: 0; width: 100%; height: 100%; z-index: 0; margin: 0 auto; background-color: #333; background-color: #FF6600; background-color: #CC3300; background-color: #CCC; background: #FFF url('/images/orange-background.png') 50% 0 repeat-x; background-attachment: fixed; border-top: 1px solid #FFF;*/
+}
+#transparent-vertical-background
+{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 970px;
+    height: 100%;
+    z-index: 0;
+    margin: 0 auto;
+    border-left: 1px solid #FFF;
+    border-right: 1px solid #FFF; /* background:transparent url('http://static.amp.fm/amplogo5.png') 100px 98% no-repeat; background: #FFF url('/static/images/orange-background.png') 50% 0 repeat-x;*/
+    background: #FFF;
+}
+.transparent-vertical-background-left-shadow
+{
+    position: absolute;
+    top: 0;
+    left: -8px;
+    width: 8px;
+    height: 100%;
+    background: transparent url('/static/images/canvas-shadow-left.png') 0 0 repeat-y;
+}
+.transparent-vertical-background-right-shadow
+{
+    position: absolute;
+    top: 0;
+    right: -8px;
+    width: 8px;
+    height: 100%;
+    background: transparent url('/static/images/canvas-shadow-right.png') 0 0 repeat-y;
+}
+#transparent-horizontal-background
+{
+    position: absolute;
+    top: 28px;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 75px;
+    z-index: 0;
+    margin: 0 auto;
+    border-top: 1px solid #FFF; /* border-bottom:1px solid #FFF;*/
+}
+#right-content-vertical-transparent-container
+{
+    position: fixed;
+    top: 0px;
+    left: 700px;
+    right: 0;
+    width: 250px;
+    text-align: center;
+    height: 100%;
+    z-index: 0;
+    margin: 0 auto;
+    border-left: 1px solid #EEE;
+    border-right: 1px solid #EEE;
+    background-attachment: fixed;
+}
+#right-content-vertical-transparent-container div.inner
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    margin: 0 auto;
+    background-color: #EB7C29;
+    background-color: #F4F4ED;
+    background-color: #EFF3F6;
+    background-attachment: fixed;
+}
+#transparent-vertical-background div.inner
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 970px;
+    height: 100%;
+    margin: 0 auto; /* url('/static/images/amp.fm-logo-watermark.png') 50% -35px repeat-y */
+    background: #FFF;
+}
+#transparent-horizontal-background div.inner
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    background: #E5E6DA url('http://www.latimes.com/images/entnews/bg.gif') 50% 0 repeat-x;
+}
+h1
+{
+    color: #900;
+    font-size: 36pt;
+}
+h3
+{
+    color: #FFF;
+    font-size: small;
+    padding: 2px 0;
+    margin: 0;
+}
+h3.published-time
+{
+    color: #333;
+    font-size: small;
+    padding: 10px 0;
+    margin: 20px 0 0;
+}
+h4
+{
+    color: #FFF;
+    font-size: 10pt;
+    padding: 2px 0;
+    margin: 0;
+}
+.summary-container
+{
+    margin: 10px;
+    overflow: hidden;
+    padding: 105px 5px; /* background:Transparent url('/static/images/amp.fm-get-plugged-in.png') 50% 5px no-repeat;*/
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+}
+.event-container h4
+{
+    color: #333;
+    padding: 3px 0;
+    margin: 0;
+    width: 100%;
+}
+.event-container h4 a
+{
+    color: #333;
+    font-size: 10pt;
+    padding: 2px 3px;
+}
+.event-container h4:hover
+{
+    background-color: #CCC;
+    color: #FFF;
+}
+.event-container h4:hover a
+{
+    background-color: #CCC;
+    color: #FFF;
+}
+img
+{
+    border: 0;
+}
+a
+{
+    background: inherit;
+    color: #333;
+    text-decoration: none;
+    outline: none;
+}
+a:hover
+{
+    background: #E46000;
+    padding: 2px;
+    color: #FFF;
+    text-decoration: underline;
+}
+a:active
+{
+    outline: none;
+}
+ul
+{
+    display: block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+li
+{
+    display: inline;
+    width: auto;
+}
+ul.list li
+{
+    display: block;
+}
+ul.TtoB li
+{
+    display: block;
+}
+ul.LtoR li
+{
+    display: inline;
+    text-align: left;
+}
+ul.LtoR li:first-child
+{
+    margin-left: 5px;
+}
+ul.RtoL li
+{
+    text-align: right;
+}
+h1.view-nav
+{
+    color: #FFF;
+    font-size: 36pt;
+    font-weight: 600;
+    margin: 0 auto;
+    padding: 7px 125px;
+    text-align: left;
+    border-bottom: 1px solid #4C4C4C;
+    border-top: 1px solid #4C4C4C;
+    background: #5A7297 url('/images/amp.fm_no-background-25percent.png') 1% 27% no-repeat;
+    width: auto;
+}
+.newspaper
+{
+    display: none;
+}
+.scope-left
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: left;
+    width: 50%;
+    display: inline;
+    color: #4C4C4C;
+    font-size: 10pt;
+}
+.scope-right
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-align: right;
+    width: 50%;
+    display: inline;
+    color: #4C4C4C;
+    font-size: 10pt;
+}
+#search-box
+{
+    width: 100%;
+    margin: 10px auto;
+    padding: 0;
+    text-align: center;
+    z-index: 10; /* background:transparent url('http://static.amp.fm/amplogo5.png') 50% 50% no-repeat;*/
+}
+#search-form
+{
+    margin: 0;
+    padding: 0;
+}
+#search-text
+{
+    /* border:1px solid #CC6600;*/
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 2px;
+    width: 325px;
+    margin-right: 2px;
+    color: #333;
+    border: 1px solid #777;
+}
+#center-content
+{
+    margin: 30px 0;
+}
+.inner-content
+{
+    margin: 0;
+    overflow: hidden;
+    padding: 0; /* background:Transparent url('/static/images/amp.fm-get-plugged-in.png') 50% 0 no-repeat;*/
+}
+.logged-in
+{
+    color: #FFF;
+}
+.Button, .ButtonLabel
+{
+    background: #F9F9F9 url('/static/images/button-bg-gradient.png') 0 0 repeat-x;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    outline: none;
+}
+.Button
+{
+    border: 1px solid #909090;
+    color: #909090;
+    font-weight: 600;
+    padding: 0px 2px;
+    -moz-border-radius-topleft: 2px;
+    -webkit-border-top-left-radius: 2px;
+    -moz-border-radius-topright: 2px;
+    -webkit-border-top-right-radius: 2px;
+    -moz-border-radius-bottomleft: 2px;
+    -webkit-border-bottom-left-radius: 2px;
+    -moz-border-radius-bottomright: 2px;
+    -webkit-border-bottom-right-radius: 2px;
+    outline: none;
+}
+.Button.search
+{
+    padding: 1px 2px;
+    color: #666;
+    border: 1px solid #606060;
+}
+.Button:hover
+{
+    color: #666;
+    border: 1px solid #606060;
+    cursor: pointer;
+}
+.Button.search:hover
+{
+    padding: 1px 2px;
+    color: #666;
+    border: 1px solid #404040;
+}
+#at-ampfm-link
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+#at-ampfm-image
+{
+    position: absolute;
+    left: -2px;
+    top: -1px;
+    z-index: 100;
+    width: 89px;
+    height: 82px;
+    padding: 0;
+    margin: 0;
+    background: url('/images/amp.fm_record-logo-75.png') 0 -58px no-repeat;
+    background: url('/images/calendar-large.png') 0 -5px no-repeat;
+    margin: 0;
+    padding: 0;
+}
+#cal-date
+{
+    position: absolute;
+    top: 0;
+    left: -2px;
+    margin: 0 auto;
+    width: 100%;
+}
+#cal-month
+{
+    position: relative;
+    margin: 7px 0 0;
+    text-align: center;
+    font-size: 1em;
+    color: #FFF;
+    width: auto;
+    font-weight: 600;
+}
+#cal-day
+{
+    position: relative;
+    margin: 4px 0 0;
+    text-align: center;
+    width: 100%;
+    color: #333;
+    font-size: 2.6em;
+    font-weight: 600;
+}
+#at-ampfm-image:hover
+{
+    /* background-image:url('/images/amp.fm_record-logo.png');*/
+    margin: 0;
+    padding: 0;
+}
+#at-ampfm-link
+{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 22px;
+    left: 5px;
+}
+#at-ampfm-link:hover
+{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+#at-overlay
+{
+    background-color: #E46000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+}
+#at
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 8.5em;
+    margin-top: -.435em;
+    z-index: 101;
+    color: #FFF;
+    font-weight: 400;
+    text-align: center;
+}
+#forward-back
+{
+    margin-top: 2px;
+    padding-bottom: 10px;
+    position: relative;
+    width: 100%;
+}
+#forward-back a
+{
+    color: #4C4C4C;
+    font-size: 10pt;
+    padding: 2px;
+}
+#forward-back a:hover
+{
+    background: inherit;
+    color: #4C4C4C;
+}
+#MSVE_minimap
+{
+    border-color: #cbcbcb;
+    border-style: solid;
+    border-width: 1px;
+    cursor: default;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 99;
+}
+#MSVE_minimap.MSVE_Minimap_V6
+{
+    border-color: #bdd1ec;
+    border-right-style: none;
+    border-right-width: medium;
+    border-top-style: none;
+    border-top-width: medium;
+    left: auto;
+    right: 0;
+    top: 0;
+}
+#results
+{
+    background: #FFF;
+    border: 1px solid #333;
+    display: none;
+    font-size: 10pt;
+    height: auto;
+    left: 0;
+    margin: auto;
+    padding: 2px 5px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 35px;
+    width: 300px;
+    z-index: 50;
+}
+#DEBUG
+{
+    background: #FFF;
+    border-top: 2px solid #000;
+    bottom: 0;
+    color: #333;
+    display: none;
+    height: 30%;
+    right: 0;
+    overflow: scroll;
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    margin: 0 1em;
+    z-index: 500000000;
+    padding-top: 10px;
+}
+#DEBUG li
+{
+    color: #333;
+    display: block;
+    font-size: 8pt;
+    font-family: "lucida console" ,console,verdana,tahoma, "sans serif" ,serif;
+    padding: 2px 0;
+}
+#DEBUG li:hover
+{
+    background-color: #EEE;
+    color: #333;
+    cursor: pointer;
+}
+#DEBUG ol
+{
+    display: block;
+    height: auto;
+    margin: 0;
+    width: auto;
+    padding: 0 10px;
+}
+#MSVE_minimap
+{
+    border-color: #cbcbcb;
+    border-style: solid;
+    border-width: 1px;
+    cursor: default;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 99;
+}
+#MSVE_minimap.MSVE_Minimap_V6
+{
+    border-color: #bdd1ec;
+    border-right-style: none;
+    border-right-width: medium;
+    border-top-style: none;
+    border-top-width: medium;
+    left: auto;
+    right: 0;
+    top: 0;
+}
+/* BEGIN PROBLEM */
+#body
+{
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    z-index: 1;
+}
+#content-container
+{
+    width: 100%;
+    height: 1800px;
+    position: relative;
+    top: 1px;
+    left: 0;
+}
+#search-and-filter-container
+{
+    width: auto;
+    height: 75px;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-top: 3px;
+    margin-bottom: 2px;
+    background: transparent;
+    /*border-top: 1px solid #D2D3D6;
+    border-bottom: 1px solid #D2D3D6;*/
+    padding: 2px 5px;
+    background: #FFF url('/static/images/slc-header.jpg') 100% 100% no-repeat; /* background:#FFF url('/static/images/slc-at-night-skyline-capital-hill-snip.jpg') 100% 60% no-repeat;*/ /* background:#FFF url('/static/images/slc-skyline-from-capital-hill-slim-bw.jpg') 0 0 no-repeat;*/
+}
+#logo-and-search-container
+{
+    width: 725px;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline;
+    text-align: center;
+}
+#filter-container
+{
+    width: auto;
+    height: auto;
+    padding: 1px 0;
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+    text-align: left;
+    border: 1px solid #3E4852;
+    background: #3E4852 url('http://developer.apple.com/iphone/library/includes/reflibnav_header_middle.png') 0 50% repeat-x;
+}
+#filter-container h3
+{
+    text-indent: 5px;
+    color: #FFF;
+}
+#top-navigation
+{
+    width: auto;
+    height: 22px;
+    position: relative;
+    top: 0px;
+    left: 0;
+    display: block;
+    text-align: left;
+    border: 1px solid #939393;
+    border-top: 0;
+    -moz-border-radius-bottomleft: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    -moz-border-radius-bottomright: 3px;
+    -webkit-border-bottom-right-radius: 3px;
+    background: #F0F0F0 url('/static/images/nav-bg-gradient.png') 0 0 repeat-x;
+    padding: 0;
+}
+#navigation
+{
+    width: auto;
+    height: 22px;
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+    text-align: left;
+    border: 1px solid #3E4F66;
+    -moz-border-radius-topleft: 3px;
+    -webkit-border-top-left-radius: 3px;
+    -moz-border-radius-topright: 3px;
+    -webkit-border-top-right-radius: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    -moz-border-radius-bottomright: 3px;
+    -webkit-border-bottom-right-radius: 3px;
+    background: #F0F0F0 url('/static/images/nav-bg-gradient.png') 0 50% repeat-x;
+    background: #798BA3 url('/static/images/h4.png') 0 50% repeat-x;
+    padding: 0;
+    margin: 0;
+}
+#top-navigation-menu
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#top-navigation ul.current
+{
+    margin: 0;
+    padding: 0;
+    float: left;
+    clear: none;
+}
+#top-navigation ul.current li
+{
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    text-decoration: none;
+    height: 20px;
+    padding: 0.25em 0;
+    color: #333;
+}
+#top-navigation ul.current li a, #navigation ul.current li a:hover, #top-navigation ul.current li.chevron
+{
+    margin: 0;
+    padding: 0;
+    display: block;
+    float: left;
+    line-height: 1em;
+    outline: none;
+    text-decoration: none;
+    height: auto;
+    padding: 4px 10px 5px 18px;
+    color: #666;
+    background-color: transparent;
+    background-image: url('/static/images/nav-arrow.png');
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: 0px 50%;
+}
+#top-navigation ul.current li.chevron
+{
+    padding: 0px 10px 2px 15px;
+}
+#top-navigation ul.current li a:hover
+{
+    color: #CC3300;
+}
+#top-navigation ul.current a.no-chevron
+{
+    background-image: none;
+    padding-left: 0;
+    padding-right: 0;
+}
+#top-navigation ul.current li a.home, #top-navigation ul.current li a.home:hover
+{
+    background: url('/static/images/amp.fm_@-icon-small-white.png') 7px 0px no-repeat;
+    height: auto;
+    width: 33px;
+    margin-left: 0;
+    padding-left: 5px;
+    padding-right: 9px;
+    text-indent: -9999em;
+    overflow: hidden;
+}
+#top-navigation ul.current li a.home:hover
+{
+    background: url('/static/images/amp.fm_@-icon-small-l-gray.png') 7px 0px no-repeat;
+}
+#left-container
+{
+    width: 162px;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    display: inline;
+    text-align: left; /* border:1px solid #D0DDEF; background-color: #FFF;*/
+    margin: 0 auto;
+    text-align: center;
+}
+#left-container .left-content-container
+{
+    margin: 0 auto 3px;
+    width: 162px;
+    text-align: center;
+    background-color: #F9F9F9;
+}
+#left-container .left-content-container ul
+{
+    margin: 0 auto;
+    width: auto;
+    text-align: left;
+    display: block;
+}
+#left-container .left-content-container .container-borders
+{
+    border: 1px solid #CDCDCD;
+    border-top: 0;
+    margin: 0;
+    padding: 0;
+}
+#left-container .sponsored-ad-top
+{
+    width: 160px;
+    height: auto;
+    background: #667B98 url('/static/images/h2-blue.png') 0 20% repeat-x;
+    border: 1px solid #667B98;
+    color: #FFF;
+    text-align: left;
+    padding: 0;
+}
+#left-container .sponsored-ad-top div
+{
+    width: 160px;
+    height: auto;
+    background: Transparent url('/static/images/amp.fm_@-icon-small.png') 2px 0 no-repeat;
+    color: #FFF;
+    text-indent: 10px;
+    text-align: left;
+    text-indent: 38px;
+    padding: 1px 0 2px;
+    margin: 0;
+}
+#center-container
+{
+    width: auto;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 162px;
+    right: 200px;
+    display: inline;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 5px;
+}
+#right-container
+{
+    width: 198px;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    right: 0;
+    display: inline;
+    text-align: right; /* border:1px solid #CDCDCD; background-color: #F9F9F9;*/
+}
+#timespan-container
+{
+    width: 100%;
+    height: auto;
+    border: 1px solid #CDCDCD;
+    background-color: #F9F9F9;
+    text-align: left;
+    margin-bottom: 2px;
+}
+#right-content-vertical-container
+{
+    position: absolute;
+    top: 0;
+    right: 0px;
+}
+#event-listing-container
+{
+    margin: 0;
+    padding: 0;
+    height: auto;
+    width: 100%;
+}
+#right-column-sub-nav
+{
+}
+#right-column-sub-nav li
+{
+    padding: 10px;
+    color: #FFF;
+}
+#right-column-sub-nav li a
+{
+    padding: 10px;
+    color: #FFF;
+}
+#right-column-sub-nav li.selected
+{
+    padding: 10px;
+    border: 1px solid #FFF;
+}
+#amp-fm-logo
+{
+    width: 180px;
+    position: absolute;
+    top: 10px;
+    left: 0px;
+    margin: 0 auto;
+    text-align: left;
+}
+#filter
+{
+    text-align: center;
+    width: 500px;
+    display: inline;
+    position: absolute;
+    top: 25px;
+    left: 220px;
+}
+#login-box
+{
+    margin: 0 auto;
+    width: auto;
+    text-align: center;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    right: 0px;
+}
+#login-container li
+{
+    text-align: center;
+}
+#login-container li a
+{
+    padding: 5px 0;
+    color: #003366;
+}
+#login-container li a:hover
+{
+    color: #003366;
+    background-color: transparent;
+    text-decoration: underline;
+}
+#login-options
+{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+#login-options li
+{
+    text-align: center;
+}
+#login-options a
+{
+    color: #9F9181;
+}
+#login-form li, #login-form label, #login-form a, #login-container a
+{
+    color: #003366;
+}
+#login-text
+{
+    margin: 0 auto;
+    text-align: center;
+    margin: 0;
+    padding: 5px 0;
+    text-align: center; /* border-top:1px solid #FFF; border-bottom: 1px solid #CCC;*/
+}
+#login-text table
+{
+    width: 217px;
+    margin: 0;
+    padding: 0;
+    border-spacing: 0;
+}
+#login-text table tr, #login-text table td
+{
+    margin: 0;
+    padding: 0;
+}
+#login-text table tr
+{
+    border-spacing: 2px 0;
+}
+#instance, #create-member-account, #login-account, #create-account, #create-or-login
+{
+    z-index: 2000;
+    position: relative;
+    display: block;
+    width: 880px;
+    margin: 150px auto 0;
+}
+#create-account, #create-or-login
+{
+    margin: 0 auto;
+}
+#create-event
+{
+    margin: 5px 0 10px;
+    padding: 0;
+    width: 100%;
+}
+#create-event-list
+{
+    padding: 0;
+    margin: 0;
+}
+#create-event-selector
+{
+    padding: 2px 0;
+    margin: 0;
+}
+#create-event-selector button
+{
+    border: 0;
+    background-color: transparent;
+    color: #333;
+    width: auto;
+    padding: 2px 5px;
+    margin: 0;
+}
+#create-event-selector a
+{
+    padding: 2px 5px;
+    margin: 0;
+}
+#create-event-selector a:hover
+{
+    background-color: transparent;
+}
+#create-event-selector button:hover
+{
+    background-color: #CC3300;
+    color: #FFF;
+}
+.buy-now
+{
+    float: right;
+    padding: 0;
+    margin: -5px 0 0;
+    background-color: transparent;
+}
+.buy-now a
+{
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+}
+.center-content
+{
+    height: auto;
+    margin: 0;
+    background: #FFF;
+    color: #000;
+    padding: 0;
+    width: 100%;
+}
+#iphone-graphic
+{
+    position: fixed;
+    bottom: 15px;
+    right: -2px;
+    z-index: 10000;
+}
+#ampfm-graphic
+{
+    margin-top: 10px;
+    z-index: 10000;
+}
+#center
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 950px;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    z-index: 10000;
+}
+#view-map
+{
+    z-index: 100000;
+    display: none;
+    width: 100%;
+    height: 100%; /* url('/images/orange-background.png') 50% 0 repeat-x */ ;
+position:absolute;
+top:0;
+left:0;
+}
+#loading
+{
+    position: absolute;
+    top: -3px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 6.5em;
+    z-index: 10000;
+    height: auto;
+    background-color: #CC6600;
+    border: 1px solid #FFF;
+    border-top: 0;
+    padding: 2px 5px;
+    z-index: 11000;
+    height: auto; /* background:url('/images/amp.fm_record-logo-75.png') 0 -58px no-repeat;*/ /* background-color:Transparent;*/
+    text-align: center;
+    display: none;
+    color: #FFF;
+    font-weight: 600;
+    -moz-border-radius-bottomleft: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    -moz-border-radius-bottomright: 3px;
+    -webkit-border-bottom-right-radius: 3px;
+}
+#event-listing
+{
+    display: block;
+}
+#forward-back
+{
+    margin-top: 1px; /* padding-bottom:20px;*/
+    position: relative;
+    width: 100%;
+}
+#results
+{
+    background: #FFF;
+    border: 1px solid #333;
+    display: none;
+    font-size: 10pt;
+    height: auto;
+    left: 0;
+    margin: auto;
+    padding: 2px 5px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 35px;
+    width: 300px;
+    z-index: 50;
+}
+#view-selector
+{
+    display: inline;
+    border-right: 1px solid #EEE;
+    border-left: 1px solid #EEE;
+    padding: 0 5px 0;
+    margin: 0;
+}
+#timespan-menu, .timespan-menu
+{
+    display: block;
+    padding: 1px 0;
+    text-align: left;
+    width: 100%;
+}
+.four-rounded-corners
+{
+    -moz-border-radius-topleft: 3px;
+    -webkit-border-top-left-radius: 3px;
+    -moz-border-radius-topright: 3px;
+    -webkit-border-top-right-radius: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    -moz-border-radius-bottomright: 3px;
+    -webkit-border-bottom-right-radius: 3px;
+}
+.top-rounded-corners
+{
+    -moz-border-radius-topleft: 3px;
+    -webkit-border-top-left-radius: 3px;
+    -moz-border-radius-topright: 3px;
+    -webkit-border-top-right-radius: 3px;
+}
+.timespan-menu a
+{
+    color: inherit;
+    padding: 0;
+}
+.timespan-menu a:hover
+{
+    background: inherit;
+    color: inherit;
+}
+.timespan-menu label
+{
+    margin-right: 5px;
+}
+#timespan-menu li
+{
+    background: inherit;
+    color: #333;
+    font-weight: 400;
+    margin: 0;
+    padding: 5px;
+}
+#timespan-menu li.not-selected
+{
+    background: inherit;
+    color: #333;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 8px;
+}
+#timespan-menu li.not-selected:hover
+{
+    background: inherit;
+    color: #CC3300;
+    text-decoration: none;
+}
+#timespan-menu li.not-selected a
+{
+    background: inherit;
+    color: #3F3F3F;
+    font-weight: 400;
+    margin: 0 2px;
+    padding: 3px;
+}
+#timespan-menu li.not-selected:hover a
+{
+    background: inherit;
+    color: #3F3F3F;
+    text-decoration: underline;
+}
+#timespan-menu li.selected
+{
+    border: 1px solid #CDCDCD;
+    -moz-border-radius-topright: 3px;
+    -webkit-border-top-right-radius: 3px;
+    -moz-border-radius-bottomright: 3px;
+    -webkit-border-bottom-right-radius: 3px;
+    border-left: 0;
+    width: 180px;
+    background-color: #FCFCFC;
+    height: auto;
+    padding: 5px 0;
+    margin: 5px 0;
+}
+#timespan-menu li.selected a
+{
+    font-weight: 600;
+    color: #3F3F3F;
+    margin: 0; /* text-decoration:underline;*/ /* border:1px solid #FFF;*/
+    border-bottom: 0;
+    margin-left: -1px;
+    background-color: #FCFCFC;
+    padding: 5px;
+    outline: none;
+}
+#timespan-menu li.selected:hover a
+{
+    color: #CC3300;
+    background-color: inherit;
+}
+.timespan-menu li.selected
+{
+    font-weight: 600;
+    color: #FFF; /* background-color:#FFF;*/
+    margin: 0;
+    padding: 2px 5px;
+    text-decoration: none; /* border:1px solid #FFF;*/
+    -moz-border-radius-topleft: 5px;
+    -webkit-border-top-left-radius: 5px;
+    -moz-border-radius-topright: 5px;
+    -webkit-border-top-right-radius: 5px;
+    border-bottom: 0;
+}
+.timespan-menu li.selected:hover
+{
+    color: #FFF; /* background-color:#FFF;*/
+}
+.timespan-menu li:hover
+{
+    color: #900;
+    cursor: pointer;
+}
+#top-container
+{
+    background: #CCC;
+    background: transparent; /* background:#FFF url('/images/top_bg.png') 0 0 repeat-x;*/
+    position: absolute;
+    background-attachment: fixed;
+    top: 5px;
+    left: 0;
+    width: 100%;
+    height: auto;
+}
+#top-bar
+{
+    left: 0;
+    margin: 0 auto;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 970px;
+    z-index: 1002;
+    text-align: right; /* border-left:1px solid #333; border-right: 1px solid #333;*/
+}
+#login-create-account-selector
+{
+}
+#login-create-account-selector a.highlight-link
+{
+    color: #333;
+}
+#top-workspace-menu
+{
+    padding: 0;
+    width: auto;
+    color: #3F3F3F;
+    position: absolute;
+    top: 2px;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+    height: auto;
+}
+#top-workspace-menu a
+{
+    color: #3F3F3F;
+    padding: 0;
+    color: #000;
+}
+#top-workspace-menu a:hover
+{
+    background: inherit;
+    color: Inherit;
+}
+#top-workspace-menu li
+{
+    color: #3F3F3F;
+    background-color: inherit;
+    border-left: 1px dotted #CDCDCD;
+    padding: 0px 6px;
+    margin: 0;
+}
+#top-workspace-menu li > a
+{
+    color: #3F3F3F;
+    margin: 0;
+    padding: 0;
+}
+#top-workspace-menu li.not-selected
+{
+    background: inherit;
+    margin: 0;
+}
+#top-workspace-menu li.not-selected a
+{
+}
+#top-workspace-menu li.not-selected:hover
+{
+}
+#top-workspace-menu li.not-selected:hover > a
+{
+    color: #CC3300;
+    text-decoration: underline;
+}
+#top-workspace-menu li.selected
+{
+    font-weight: 600;
+}
+#top-workspace-menu li.selected:hover
+{
+    background: inherit;
+    color: #CC6600;
+}
+#top-workspace-menu li.selected a
+{
+    color: #CC3300;
+    text-decoration: none;
+}
+#top-workspace-menu li.selected a:hover
+{
+    color: #CC6600;
+    text-decoration: underline;
+}
+#fb_login_image
+{
+}
+#view-nav
+{
+    display: block;
+    text-align: right;
+    z-index: 100;
+    padding: 0;
+    width: 970px;
+    margin: 2px auto;
+    margin-top: 102px;
+}
+.event-listing
+{
+    margin: 20px 0;
+    padding: 5px 0;
+    width: 100%;
+}
+.event-container
+{
+    margin: 0 0 20px;
+    padding: 5px 0 0;
+    text-align: left;
+    border-top: 1px solid #CCC;
+    border-bottom: 1px solid #CCC;
+    width: auto;
+    height: auto;
+    position: relative; /* background:url('/images/amp.fm_no-background-large.png') 0 0 no-repeat;*/
+}
+.event-container .transparent-background
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #FFF;
+}
+.event-container .content
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.xCal-event-title
+{
+    width: auto;
+    position: relative;
+}
+.xCal-event-title h4
+{
+    color: #003366;
+    margin: 0 5px;
+    width: auto;
+}
+.xCal-event-title:hover h4
+{
+    color: #FFF;
+    background-color: #336699;
+}
+.xCal-event-title h4:hover a
+{
+    color: #FFF;
+    background-color: #336699;
+}
+.xCal-venue-container
+{
+    padding: 5px;
+    width: auto;
+    position: relative;
+}
+.xCal-venue-container a:hover
+{
+    padding: 0;
+    margin: 0;
+}
+.xCal-venue
+{
+    padding: 3px 0;
+    margin: 0;
+    width: auto;
+    position: relative;
+}
+.xCal-venue a
+{
+    color: #336699;
+    padding: 1px 4px;
+}
+.xCal-venue a:hover
+{
+    color: #336699;
+    background-color: #EEE;
+    padding: 1px 4px;
+    text-decoration: none;
+}
+.xCal-venue:hover
+{
+    color: #003366;
+    background-color: #EEE;
+}
+.venue-artist-controllers
+{
+    margin: 0;
+    width: auto;
+    padding: 0 5px 3px;
+    z-index: 0;
+    background-color: Transparent;
+    border-top: 1px solid #CCC; /* border-bottom:1px solid #FFF;*/
+}
+.venue-artist-controllers:hover
+{
+    background-color: Transparent;
+}
+.venue-artist-controllers a
+{
+    color: #336699;
+    border: 0;
+}
+.venue-artist-controllers:hover a
+{
+    color: #336699;
+    border: 0;
+}
+.venue-artist-controllers > div
+{
+}
+.filter-container
+{
+    border-top: 1px solid #EEE;
+    border-bottom: 1px solid #EEE;
+    padding: 2px 0;
+    margin: 0 0 3px;
+}
+.filter-container > div
+{
+    display: inline;
+    margin: 0;
+}
+.filter-container a
+{
+    color: #FFF;
+}
+.filter-container a:hover
+{
+    background-color: inherit;
+    color: #FFF;
+}
+.inline-playlist-controller
+{
+    padding: 0;
+    margin: 2px 0;
+    position: relative;
+}
+.inline-playlist-controller > div
+{
+    display: inline;
+    margin: 0;
+    padding: 3px 5px;
+    border-right: 1px solid #FFF;
+}
+.inline-playlist-controller a
+{
+    padding: 2px 0;
+    margin: 0;
+    color: #336699;
+    border: 0;
+}
+.inline-playlist-controller a:hover
+{
+    color: #336699;
+    background-color: transparent;
+    text-decoration: underline;
+    border: 0;
+}
+.venue-artist-controllers a
+{
+    padding: 0px 3px 1px;
+    margin: 0;
+}
+.venue-artist-controllers a:hover
+{
+    padding: 1px 3px;
+    margin: 0;
+    font-weight: 400;
+}
+.venue-artist-controllers:hover .inline-playlist-controller > div
+{
+    border-right: 1px solid #FFF;
+}
+.venue-artist-controllers:hover .filter-container
+{
+    border-top: 1px solid #FFF;
+    border-bottom: 1px solid #FFF;
+}
+.inline-playlist-controller-label
+{
+    margin-bottom: 2px;
+    display: inline;
+    margin-left: 5px;
+}
+.playlist-container
+{
+    display: none;
+    width: auto;
+    height: auto;
+    position: relative;
+    padding: 5px 0;
+}
+.map-birdseye-view
+{
+    position: relative;
+}
+.map-birdseye-view:hover div
+{
+    width: auto;
+    background-color: Transparent;
+}
+.map-birdseye-view:hover
+{
+    background-color: #EEE;
+}
+.map-birdseye-view a:hover
+{
+    color: #FFF;
+}
+.xCal-venue-adr
+{
+    position: relative;
+    margin: 1px 0;
+    padding: 5px;
+    width: auto;
+}
+.xCal-venue-adr:hover
+{
+    background-color: #EEE;
+    color: #003366;
+}
+.xCal-venue-adr:hover a
+{
+    background-color: #EEE;
+    color: #336699;
+}
+.xCal-venue-adr .xCal-venue
+{
+    padding: 1px 0;
+    margin: 1px 0;
+    width: auto;
+}
+.xCal-venue-adr a
+{
+    background-color: #EEE;
+    color: #336699;
+    text-decoration: none;
+}
+.xCal-venue-adr a:hover
+{
+    background-color: #EEE;
+    color: #003366;
+}
+.venue-adr-selected
+{
+    background-color: #EEE;
+}
+.venue-adr-selected a
+{
+    color: #336699;
+}
+.venue-adr-selected a:hover
+{
+    color: #003366;
+    background-color: #EEE;
+}
+.xCal-venue-map-container
+{
+    display: none;
+    width: auto;
+    height: auto;
+    position: relative;
+    margin: 5px 1px 1px;
+}
+.xCal-venue-map-container .filter-container
+{
+    z-index: 10000;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    border-top: 1px solid #336699;
+    border-bottom: 1px solid #336699;
+    background-color: #FFF;
+    color: #333;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.xCal-venue-map-container .filter-container div, .xCal-venue-map-container .filter-container div a
+{
+    background-color: inherit;
+    color: #336699;
+    margin: 0;
+    padding: 1px 0;
+}
+.xCal-venue-map-container .filter-container div a
+{
+    padding: 0 10px;
+    border-right: 1px solid #FFF;
+}
+.xCal-venue-map-container .filter-container div a.selected
+{
+    font-weight: 600;
+}
+.xCal-venue-map-container .filter-container div a:hover
+{
+    color: #336699;
+    text-decoration: underline;
+}
+.xCal-venue-map-container .xCal-venue-map
+{
+    width: 100%;
+    height: 300px;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+ul.playlist
+{
+    margin: 0;
+    padding: 0;
+    width: 445px;
+}
+ul.playlist li
+{
+    /* assume all items will be sounds rather than wait for onload etc. in this example.. may differ for your uses. */
+    height: 1.8em;
+    background-color: #79B143;
+    background: #79B143 url('/static/images/h2-green.png') 0 100% repeat-x;
+    color: #FFF;
+    padding: 0;
+    width: auto;
+    text-decoration: none;
+    position: relative;
+    border-bottom: 2px solid #FFF;
+    padding: 0.3em 0 0.1em;
+    -webkit-transition-property: hover;
+    -webkit-transition: all 0.15s ease-in-out;
+}
+.venue-artist-controllers:hover ul.playlist li a, ul.playlist li a
+{
+    margin: 0;
+    padding: 0.3em 0 0.1em;
+    color: #FFF;
+    font-size: 1em;
+    font-weight: 400;
+    margin-left: 5px;
+    padding: 0;
+}
+ul.playlist li:hover
+{
+    background: #CC6600 url('/static/images/h2-orange.png') 0 30% repeat-x;
+    color: #FFF;
+}
+ul.playlist li a:hover, ul.playlist li:hover a
+{
+    background: transparent;
+    color: #FFF;
+    text-decoration: none;
+    cursor: hand;
+}
+a.mp3
+{
+    position: relative;
+    width: 100%;
+}
+.log
+{
+}
+span.error
+{
+    color: red;
+}
+span.functionName
+{
+    color: blue;
+}
+span.message
+{
+    color: green;
+}
+span.argValues
+{
+    color: black;
+}
+span.ellipsis
+{
+    color: black;
+    margin: 0 1pt;
+}
+div.not-implemented
+{
+}
+p
+{
+    text-align: left;
+    padding: 10px;
+}
+#mediaform
+{
+    position: relative;
+    width: 500px;
+    margin: 0;
+    padding: 0;
+    display: block;
+    text-align: center;
+}
+.eventform
+{
+    position: relative;
+    width: 500px;
+    margin: 0;
+    padding: 0;
+    display: block;
+    text-align: center;
+}
+.eventform form
+{
+    margin: 0;
+    padding: 0;
+}
+.eventform table
+{
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+.eventform fieldset
+{
+    border: 0;
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+    width: auto;
+    padding: 0 5px;
+    margin: 0 5px;
+}
+.eventform legend
+{
+    font-size: 1.5em;
+    color: #333;
+    font-weight: 600;
+    text-align: left;
+}
+.eventform th, td
+{
+    padding: 0.5em;
+}
+.eventform th
+{
+    vertical-align: middle;
+    text-align: right;
+}
+.eventform button
+{
+    padding: 0;
+    margin: 0;
+}
+.eventform label
+{
+    cursor: pointer;
+    margin-right: 5px;
+}
+.eventform label.disabled
+{
+    color: gray;
+}
+.eventform table p
+{
+    padding: 0.25em 0;
+}
+.eventform form
+{
+    margin-top: 2.5em;
+    margin-bottom: 2.5em;
+}
+.eventform input
+{
+    width: 400px;
+}
+input.text, select, textarea
+{
+    border: 1px solid #EEE;
+    padding: 0.2em;
+}
+input.text:hover, select:hover, textarea:hover
+{
+    border: 1px solid #336699;
+}
+input.login
+{
+    border: 1px solid #999;
+    padding: 2px;
+    margin: 0;
+    width: 102px;
+}
+#login
+{
+    margin: 0;
+}
+#password
+{
+    margin: 0;
+    float: right;
+}
+a.no-hover-background:hover
+{
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+}
+small a:hover, small a
+{
+    margin: 0;
+    padding: 0;
+}
+#modal-map-container
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #F4F4ED;
+}
+#modal-map
+{
+    width: 65%;
+    height: 65%;
+    border: 1px solid #FFF;
+    position: absolute;
+    top: 0;
+    left: 4%;
+    bottom: 0;
+    margin: auto;
+}
+#modal-map-directions
+{
+    color: #FFF;
+    width: 22%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 73%;
+    margin: 0 auto;
+    padding: 0 10px;
+    background-color: #EB7C29;
+    border-right: 1px solid #FFF;
+    border-left: 1px solid #FFF;
+}
+a.session
+{
+    color: #3F3F3F;
+    padding: 0 2px;
+}
+a.session.profile
+{
+    font-weight: 600;
+}
+a.session:hover
+{
+    color: #FFF;
+    background-color: #3F3F3F;
+    padding: 0 2px;
+}
+.top-bottom-border
+{
+    border-top: 1px solid #FFf;
+    border-bottom: 1px solid #FFF;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+#footer
+{
+    position: relative;
+    top: 34px;
+    left: 0;
+    right: 0;
+    width: auto;
+    padding: 10px;
+    height: 250px;
+    background-color: #3E4852;
+    margin-top: 5px;
+    border: 1px solid #3E4852;
+}
+#footer > ul > li
+{
+    margin-top: 10px;
+    margin-right: 0pt;
+    margin-bottom: 0pt;
+    margin-left: 0pt;
+    padding-top: 1px;
+    padding-right: 0pt;
+    padding-bottom: 1px;
+    padding-left: 0pt;
+    width: 25%;
+    height: auto;
+    display: inline;
+    float: left;
+}
+#footer .footer-link, #footer a
+{
+    color: #FFF;
+    padding: 2px;
+}
+#footer a:hover
+{
+    background-color: Inherit;
+    color: #FFF;
+    text-decoration: underline;
+}
+#footer dt
+{
+    font-weight: 600;
+    border-bottom: 1px solid #FFF;
+    margin: 5px 10px;
+}
+#timespan-menu
+{
+    margin-top: 20px;
+}

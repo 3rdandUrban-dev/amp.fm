@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<view:module type="application/atomictalk+xhtml" xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:view="http://atomictalk.org/page/view">
+    <ul class="menu LtoR timespan-menu">
+        <!-- <li><label>View:</label></li> -->
+        <!-- <li id="summary-view-selector" class="selected">
+            <a id="today" class="render-placeholder"
+                rel="atom:search/return-events-by-location/?location=@@location@@&amp;topic=%7C&amp;time_scope=today&amp;format=atom:Today"
+                href="#event-listing-container">Summary</a>
+        </li>
+        <li id="expanded-view-selector" class="not-selected">
+            <a id="next-3-days" class="render-placeholder"
+                rel="atom:search/return-events-by-location/?location=@@location@@&amp;topic=%7C&amp;time_scope=this_weekend&amp;format=atom:Next 3 Days"
+                href="#event-listing-container">Detail</a>
+        </li> --><!--
+        <li id="page-subscriptions" class="not-selected">
+            <a id="week"
+                rel="atom:search/return-events-by-location/?location=@@location@@&amp;topic=%7C&amp;time_scope=next_7_days&amp;format=atom:This Week"
+                href="#event-listing-container">Page Subscriptions</a>
+        </li>-->
+    </ul>
+</view:module>

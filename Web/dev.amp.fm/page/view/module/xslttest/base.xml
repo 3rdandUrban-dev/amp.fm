@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<view:module class="base" id="header" xmlns:view="http://atomictalk.org/page/view" xmlns:doc="http://atomictalk.org/feed/doc">
+  <view:container>
+    <div id="show-me"><button class="xslTest">Test</button></div>
+    <div id="xslt">Hello, XSLT</div>
+  </view:container>
+</view:module>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<view:module id="body" xmlns:menu="http://atomictalk.org/page/view/menu" xmlns:doc="http://atomictalk.org/feed/doc" xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:view="http://atomictalk.org/page/view">
+  <div id="transparent-background" class="opacity-95"/>
+    
+
+  <div id="transparent-vertical-background" class="opacity-85">
+    <div class="transparent-vertical-background-left-shadow"/>
+    <div class="inner opacity-15"/>
+    <div class="transparent-vertical-background-right-shadow"/>
+  </div>
+  
+  <!--<div id="transparent-horizontal-background">
+    <div class="inner opacity-75"/>
+  </div>-->
+  
+
+  <!--<div id="right-content-vertical-transparent-container">
+    <div class="inner"/>
+    <div class="transparent-vertical-background-left-shadow"/>
+    <div class="transparent-vertical-background-right-shadow"/>
+  </div>-->
+</view:module>

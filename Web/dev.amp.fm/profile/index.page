@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/service/transform/controller/atomictalk/base.xslt"?>
+<service:compile cache-result="true" xmlns:service="http://atomictalk.org/page/service">
+    <service:session xmlns:my="http://xameleon.org/my">
+        <service:doc src="/service/atompub/servicedoc/index.xml"/>
+        <my:page xmlns:doc="http://atomictalk.org/feed/doc" xmlns:page="http://atomictalk.org/page"
+            xmlns:output="http://atomictalk.org/page/output" xmlns:head="http://atomictalk.org/page/output/head"
+            xmlns:body="http://atomictalk.org/page/output/body" xmlns:advice="http://atomictalk.org/page/advice">
+            <page:config src="/page/config/config.xml">
+                <page:advice>
+                    <advice:page-title>@@domain.label@@</advice:page-title>
+                    <advice:location>salt+lake+city</advice:location>
+                    <advice:location.label>Profile</advice:location.label>
+                    <advice:current.title>Profile</advice:current.title>
+                    <advice:base.theme>993300-999999</advice:base.theme>
+                    <advice:current-location>@@base-uri@@@@location@@</advice:current-location>
+                    <advice:current-location.label>saltlakecity.amp.fm :: Home</advice:current-location.label>
+                    <advice:feed>@@feed-uri@@/feed.atom</advice:feed>
+                </page:advice>
+            </page:config>
+            <page:output>
+                <page:head src="/page/output/head/base.xml" />
+                <page:body src="/page/output/body/account/create.xml" />
+            </page:output>
+        </my:page>
+    </service:session>
+</service:compile>

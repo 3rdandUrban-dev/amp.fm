@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<view:module type="application/atomictalk+xhtml" xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:menu="http://atomictalk.org/page/view/menu" xmlns:view="http://atomictalk.org/page/view"
+  xmlns:doc="http://atomictalk.org/feed/doc">
+  <li id="top-navigation">
+    <ul class="menu LtoR current">
+      <li style="z-index:1;">
+        <a class="home" href="/#/">@@current.title@@</a>
+      </li>
+      <doc:location-nav/>
+      <li class="chevron">
+        <button class="Button submit change-location" style="margin-top:2px;">
+          <span class="ButtonLabel">change  location</span>
+        </button>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <div id="top-nav">
+      <menu:navigation id="top-workspace" match="$servicedoc:*//app:workspace" use="."
+        selected="app:collection[atom:title = '@@location.label@@']" type="LtoR"/>
+    </div>
+  </li>
+</view:module>

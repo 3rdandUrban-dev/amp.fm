@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<script type="text/javascript" name="timeline" version="2.0" sourceUri="http:://simile.mit.edu/"><![CDATA[
+var t1;
+var eventSource = new Timeline.DefaultEventSource();
+var bandInfos = [
+  Timeline.createBandInfo({
+      trackHeight:    0.5,
+      trackGap:       0.5,
+      eventSource:    eventSource,
+      date:           dateFormat(),
+      width:          "45%", 
+      intervalUnit:   Timeline.DateTime.HOUR, 
+      intervalPixels: 100
+  }),
+  Timeline.createBandInfo({
+      overview:  true,
+      trackHeight:    .7,
+      trackGap:       .5,
+      eventSource:    eventSource,
+      date:           dateFormat(),
+      width:          "20%", 
+      intervalUnit:   Timeline.DateTime.DAY, 
+      intervalPixels: 200
+  }),
+  Timeline.createBandInfo({
+      overview:  true,
+      trackHeight:    0.5,
+      trackGap:       0.5,
+      eventSource:    eventSource,
+      date:           dateFormat(),
+      width:          "20%", 
+      intervalUnit:   Timeline.DateTime.WEEK, 
+      intervalPixels: 200
+  }),
+  Timeline.createBandInfo({
+      width:          "15%", 
+      intervalUnit:   Timeline.DateTime.MONTH, 
+      intervalPixels: 300
+  }),
+];
+
+bandInfos[1].syncWith = 0;
+bandInfos[2].syncWith = 1;
+bandInfos[3].syncWith = 2;
+bandInfos[1].highlight = true;
+
+tl = Timeline.create(document.getElementById("timeline"), bandInfos);
+//Timeline.loadXML("/service/search/return-events-by-location/?location=new+york+city&topic=|", function(xml, url) { eventSource.loadXML(xml, url); });
+var url = "/service/search/return-events-by-location/?location=salt+lake+city&topic=|";
+transformEventXmlAsync('/page/controller/event.xsl', eventSource, url);
+]]></script>

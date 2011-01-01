@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<view:module class="base" id="view-map" xmlns:view="http://atomictalk.org/page/view">
+  <div id="modal-map-container" class="opacity-95">
+    <div id="close-map">
+      <a href="#close-map" class="jqmClose" style="color:#993300;font-size:large;padding:5px;margin-top:5px">Return to main page</a>
+    </div>
+    <div id="modal-map" style="width:65%;height:65%"/>
+    <div id="modal-map-directions">
+      <h3>
+        <a href="#">Loading directions</a>
+      </h3>
+    </div>
+  </div>
+</view:module>
+
+

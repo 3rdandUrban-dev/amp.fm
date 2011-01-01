@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<view:module xmlns:menu="http://atomictalk.org/page/view/menu" id="top-nav-menu"
+  type="application/atomictalk+xhtml" xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:view="http://atomictalk.org/page/view">
+  <li id="navigation">
+    <ul id="navigation-menu" class="menu LtoR">
+      <!--<li>
+        <ul class="menu LtoR current">
+          <li style="z-index:1;">
+            <a class="home" href="/">@@current.title@@</a>
+          </li>
+          <li style="z-index:0;">
+            <a href="/us">@@search.location@@</a>
+          </li>
+        </ul>
+      </li>-->
+      <!--<li>
+        <div id="top-nav">
+          <menu:navigation id="top-workspace" match="$servicedoc:*//app:workspace" use="."
+            selected="app:collection[atom:title = '@@location.label@@']" type="LtoR"/>
+        </div>
+      </li>-->
+    </ul>
+  </li>
+</view:module>

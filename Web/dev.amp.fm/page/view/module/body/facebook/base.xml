@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<view:module id="account-creation=and-login" xmlns:fb="http://www.facebook.com/2008/fbml"
+    xmlns:view="http://atomictalk.org/page/view">
+    <!--<script src="http://static.ak.connect.facebook.com/js/api_lib/v0.4/FeatureLoader.js.php"
+      type="text/javascript"></script>-->
+    <ul class="menu LtoR" id="login-account">
+        <li style="width:400px;display:inline;">
+            <fb:share-button/>
+        </li>
+        <li>
+            <a href="#" class="fb_connect_operation" rel="inviteConnectUsers">Invite Your Facebook
+                Friends</a>
+            <a href="#" class="fb_showPermissionDialog" rel="email">Email Permisson</a>
+            <a href="#" class="fb_showPermissionDialog" rel="offline_access">Offline Access
+                Permisson</a>
+            <a href="#" class="fb_showPermissionDialog" rel="status_update">Status
+                UpdatePermisson</a>
+            <a href="#" class="fb_showPermissionDialog" rel="photo_upload">Photo Upload
+                Permisson</a>
+            <a href="#" class="fb_showPermissionDialog" rel="create_listing">Create Listing
+                Permisson</a>
+            <a href="#" class="fb_showPermissionDialog" rel="create_event">Create Event
+                Permisson</a>
+            <a href="#" class="fb_showPermissionDialog" rel="rsvp_event">RSVP Event Permisson</a>
+            <a href="#" class="fb_showPermissionDialog" rel="sms">SMS Permisson</a>
+            <a href="#" class="fb_showPermissionDialog" rel="video_upload">Video UploadPermisson</a>
+            <a href="#" class="fb_showPermissionDialog" rel="share_item">Share Item Permisson</a>
+        </li>
+    </ul>
+
+</view:module>

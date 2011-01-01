@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<view:module class="base" xmlns="http://www.w3.org/1999/xhtml" xmlns:geo="http://nuxleus.com/geo" xmlns:doc="http://atomictalk.org/feed/doc" xmlns:view="http://atomictalk.org/page/view">
+  <li id="search-and-filter-container">
+    <!--<div style="position:absolute;top:0;left:0;background:transparent url('/static/images/amp.fm-logo-slim.png') 5px 50% no-repeat;width:100%;height:100%" class="opacity-100"/>
+    --><div id="logo-and-search-container">
+      <div id="amp-fm-logo">
+        <a class="no-hover-background" href="/">
+          <img width="230" height="60" src="/static/images/amp.fm@logo-slim.png"/>
+        </a>
+      </div>
+      <div id="filter">
+        <doc:search-box/>
+      </div>
+    </div>
+    <div id="login-box" style="display: block;">
+      <ul id="status" class="menu TtoB">
+        <doc:login id="login-status"/>
+      </ul>
+    </div>
+  </li>
+</view:module>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<service xmlns="http://www.w3.org/2007/app" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:at="http://atomictalk.org/2009/AtomicTalk#">
+  <workspace>
+    <atom:title>amp.fm</atom:title>
+    <collection href="/">
+      <atom:title>Home</atom:title>
+      <categories href="/">
+        <atom:category scheme="/" term="artist" label="Artist" />
+        <atom:category scheme="/" term="genre" label="Genre" />
+        <atom:category scheme="/" term="off-the-record" label="Off The Record" />
+        <atom:category scheme="/" term="top-100" label="Top 100" />
+        <atom:category scheme="/" term="local-film" label="Local Film" />
+        <atom:category scheme="/" term="local-arts" label="Local Arts" />
+      </categories>
+    </collection>
+        <!-- <collection
+            href="/region" >
+            <atom:title>Region</atom:title>
+            <categories
+                href="/region">
+                <atom:category
+                    scheme="/region/"
+                    term="na" label="North America" />
+                <atom:category
+                    scheme="/region/"
+                    term="sa" label="South America" />
+                <atom:category
+                    scheme="/region/"
+                    term="eu" label="Europe" />
+                <atom:category
+                    scheme="/region/"
+                    term="asia" label="Asia" />
+                <atom:category
+                    scheme="/region/"
+                    term="africa" label="Africa" />
+                <atom:category
+                    scheme="/region/"
+                    term="au-nz" label="Australia &amp; New Zealand" />
+            </categories>
+        </collection>
+        <collection
+            href="/channels" >
+            <atom:title>Channels</atom:title>
+            <categories
+                href="/channels">
+                <atom:category
+                    scheme="/channels/"
+                    term="local_djs" label="Local DJ's" />
+                <atom:category
+                    scheme="/channels/"
+                    term="underground" label="Underground" />
+                <atom:category
+                    scheme="/channels/"
+                    term="dance_clubs" label="Dance Clubs" />
+            </categories>
+        </collection> -->
+    
+    <collection href="/profile">
+      <atom:title>Profile</atom:title>
+      <categories href="/profile">
+        <atom:category scheme="/profile/" term="event-manager" label="Event Manager" />
+        <atom:category scheme="/profile/" term="media-manager" label="Media Manager" />
+        <atom:category scheme="/profile/" term="calendar" label="Calendar" />
+        <atom:category scheme="/profile/" term="watchlist" label="Watchlist" />
+        <atom:category scheme="/profile/" term="favorites" label="Favorites" />
+        <atom:category scheme="/profile/" term="playlists" label="Playlists" />
+        <atom:category scheme="/profile/" term="settings" label="Settings" />
+      </categories>
+    </collection>
+    <collection href="/messages/">
+      <atom:title>Messages</atom:title>
+      <categories href="/messages">
+        <atom:category scheme="/messages/" term="inbox" label="Inbox" />
+        <atom:category scheme="/messages/" term="subscriptions" label="Subscriptions" />
+        <atom:category scheme="/messages/" term="recommendations" label="Recommendations" />
+      </categories>
+    </collection>
+    <collection href="/search">
+      <atom:title>Search</atom:title>
+      <categories href="/search">
+        <!--<atom:category scheme="/search/" term="search-results" label="Search Results" />
+        <atom:category scheme="/search/" term="related-results" label="Related Results" />-->
+      </categories>
+    </collection>
+        <!-- <collection
+            href="/labs" >
+            <atom:title>Labs</atom:title>
+            <categories
+                href="/labs">
+                <atom:category
+                    scheme="h/labs/"
+                    term="beta" label="Latest Beta" />
+                <atom:category
+                    scheme="/labs/"
+                    term="experimental_features" label="Experimental Features" />
+            </categories>
+        </collection> -->
+  </workspace>
+</service>

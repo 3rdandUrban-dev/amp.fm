@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<view:module xmlns:menu="http://atomictalk.org/page/view/menu" type="application/atomictalk+xhtml"
+    xmlns="http://www.w3.org/1999/xhtml" xmlns:view="http://atomictalk.org/page/view">
+    <a id="at-ampfm-link" href="/">
+        <div id="at-ampfm-image">
+            <div id="cal-date">
+                <div id="cal-month">
+                    <script type="text/javascript">writeMonth()</script>
+                </div>
+                <div id="cal-day">
+                    <script type="text/javascript">writeDay()</script>
+                </div>
+            </div>
+        </div>
+    </a>
+</view:module>

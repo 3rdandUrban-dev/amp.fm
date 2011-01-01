@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<view:module xmlns:view="http://atomictalk.org/page/view" xmlns:doc="http://atomictalk.org/feed/doc">
+    <div id="eventform" xmlns:doc="http://atomictalk.org/feed/doc">
+        <form name="file-upload" id="file-upload" method="post"
+            action="/service/collection/create/service.op" enctype="multipart/form-data">
+            <input type="hidden" name="return-url" id="return-url" value="/account/media-manager/"/>
+            <fieldset>
+                <legend>
+                    <h3>Create a New Collection</h3>
+                </legend>
+                <table id="events">
+                    <tr>
+                        <td style="vertical-align:top;">Name of Collection:</td>
+                        <td>
+                            <input type="text" name="collection-name" id="collection-name" size="35"
+                            />
+                        </td>
+                        <td>
+                            <input type="submit" style="width:75px" value="Create"/>
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+        </form>
+        <div id="event-listing-container">
+            <doc:media-collections user="@@current.user@@"/>
+        </div>
+    </div>
+</view:module>

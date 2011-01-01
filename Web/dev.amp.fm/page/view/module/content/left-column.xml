@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<view:module xmlns:view="http://atomictalk.org/page/view">
+  <div class="left-content-container">
+    <ul class="menu list TtoB">
+      <li class="sponsored-ad-top top-rounded-corners">
+        <div>Top 10 Events</div>
+      </li>
+      <li>
+        <ul class="menu list TtoB container-borders" style="padding:5px;">
+          <li>Foo</li>
+          <li>Foo</li>
+          <li>Foo</li>
+          <li>Foo</li>
+          <li>Foo</li>
+          <li>Foo</li>
+          <li>Foo</li>
+          <li>Foo</li>
+          <li>Foo</li>
+          <li>Foo</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <div class="left-content-container">
+    <ul class="menu list TtoB">
+      <li class="sponsored-ad-top top-rounded-corners">
+        <div>Top 10 Tracks</div>
+      </li>
+      <li>
+        <ul class="menu list TtoB container-borders" style="padding:5px;">
+          <li>Foo</li>
+          <li>Foo</li>
+          <li>Foo</li>
+          <li>Foo</li>
+          <li>Foo</li>
+          <li>Foo</li>
+          <li>Foo</li>
+          <li>Foo</li>
+          <li>Foo</li>
+          <li>Foo</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <div class="left-content-container">
+    <ul class="menu list TtoB">
+      <!--<li class="sponsored-ad-top top-rounded-corners">amazon mp3</li>-->
+      <li class="container-borders" style="height:300px;border-color:#999;border-bottom:0">
+        <embed type="application/x-shockwave-flash"
+            src="http://ws.amazon.com/widgets/q?MarketPlace=US&amp;Operation=GetDisplayTemplate&amp;ServiceVersion=20070822&amp;WS=1&amp;ID=MP3Clips"
+            style="padding:0;margin:0" id="amzn_widget" name="amzn_widget" quality="high"
+            bgcolor="#FFFFFF" allowscriptaccess="always"
+            flashvars="MarketPlace=US&amp;Operation=GetDisplayTemplate&amp;ServiceVersion=20070822&amp;WS=1&amp;ID=MP3Clips&amp;Tag=widgetsamazon-20&amp;WidgetType=SearchAndAdd&amp;Keywords=@@search.location@@&amp;Title=Tracks related to @@search.location@@&amp;Width=160&amp;Height=300&amp;ShuffleTracks=True"
+            height="300" width="160"/>
+      </li>
+    </ul>
+  </div>
+  <div class="left-content-container">
+    <div class="sponsored-ad-top top-rounded-corners">
+      <div>Sponsored Links</div>
+    </div>
+    <iframe style="margin:0 auto; width:160px; text-align:center;border:1px solid #DCDCDC"
+        width="160" height="600" src="/static/google-ads/160x600.html" align="middle"
+        scrolling="no" marginwidth="0" marginheight="0" frameborder="0"/>
+  </div>
+</view:module>

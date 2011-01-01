@@ -1,0 +1,48 @@
+
+<html>
+  <head>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type"/>
+    <title>amp.fm</title>
+    <link href="@@static@@/feed.atom" title="@@page-title@@" type="application/atom+xml" rel="alternate"/>
+    <link href="@@static@@/feed.atom" title="@@page-title@@" type="application/xml" rel="alternate"/>
+    <link type="image/png" href="@@shortcut-icon@@" rel="shortcut icon"/>
+    <style type="text/css">@import "/css/base.css";@import "/css/transparency.css";@import "/css/.css";@import "/css/base_993300-999999.css";</style>
+    <script src="http://jquery.glyphix.com/Scripts/jquery-1.2.1.pack.js" type="text/javascript"><!--/* hack to ensure browser compatibility */--></script>
+    <script src="http://jquery.glyphix.com/Scripts/jquery.debug.js" type="text/javascript"><!--/* hack to ensure browser compatibility */--></script>
+    <script src="http://jquery.glyphix.com/Scripts/jqModal.js" type="text/javascript"><!--/* hack to ensure browser compatibility */--></script>
+    <script src="http://jquery.glyphix.com/jquery.xslTransform/sarissa-full-0.9.9/gr/abiss/js/sarissa/sarissa.js" type="text/javascript"><!--/* hack to ensure browser compatibility */--></script>
+    <script src="http://jquery.glyphix.com/jquery.xslTransform/sarissa-full-0.9.9/gr/abiss/js/sarissa/sarissa_ieemu_xpath.js" type="text/javascript"><!--/* hack to ensure browser compatibility */--></script>
+    <script src="http://jquery.glyphix.com/jquery.xslTransform/jquery.xslTransform.packed.js" type="text/javascript"><!--/* hack to ensure browser compatibility */--></script>
+    <script type="text/javascript">
+      //<![CDATA[
+      $(document).ready( function(){
+        $('button.xslTest').click( function(){
+        // load the xml file into a variable
+        var xml = xslTransform.transform('/test.xsl', '/test.xml',{params:{arthur:'foo'}});
+        // show the escaped results
+        alert(xslTransform.serialize(xml));
+        return false;
+        // place the transformation results in the new div and then chain jqModal
+        //$('#xslt').getTransform(
+        //  '/test.xsl',
+        //  '/test.xml'
+        //);
+        return false;
+      });
+      });
+      //]]>
+    </script>
+  </head>
+  <body>
+    <ul id="" class="list">
+      <li id="header" class="list">
+        <ul id="" class="list">
+          <div id="show-me">
+            <button class="xslTest">Test</button>
+          </div>
+          <div id="xslt">Hello, XSLT</div>
+        </ul>
+      </li>
+    </ul>
+  </body>
+</html>

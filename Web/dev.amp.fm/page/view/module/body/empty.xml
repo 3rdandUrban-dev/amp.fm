@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<view:module xmlns:menu="http://atomictalk.org/page/view/menu"
+    xmlns:view="http://atomictalk.org/page/view" xmlns:doc="http://atomictalk.org/feed/doc"
+    class="base" id="body-base">
+    <view:container>
+        <div id="center">
+            <div id="body-container">
+                <p>You've reached a page on amp.fm that is still under development. Please check back again soon.</p>
+            </div>
+        </div>
+        <div id="sub-nav" style="display: none;">
+            <ul class="menu LtoR not-implemented" id="sub-menu">
+                <li>
+                    <label>Sort By:</label>
+                </li>
+                <li id="newspaper-selector" class="selected">
+                    <a rel="history-view" href="#newspaper">Time of Day</a>
+                </li>
+                <li id="distance-selector" class="not-selected">
+                    <a rel="history-view" href="#distance">Distance</a>
+                </li>
+                <li id="artist-selector" class="not-selected">
+                    <a rel="history-view" href="#artist">Artist</a>
+                </li>
+                <li id="genre-selector" class="not-selected">
+                    <a rel="history-view" href="#genre">Genre</a>
+                </li>
+                <li id="venue-selector" class="not-selected">
+                    <a rel="history-view" href="#venue">Venue</a>
+                </li>
+                <li id="calendar-selector" class="not-selected">
+                    <a rel="history-view" href="#calendar">Custom...</a>
+                </li>
+            </ul>
+        </div>
+        <div id="results"/>
+        <!--<div id="ampfm-graphic">
+            <img src="@@static@@/images/amp.fm-logo-no_slogan.png"/>
+        </div>-->
+        <div id="iphone-graphic">
+            <img src="@@static@@/images/amp.fm-iphone.png"/>
+        </div>
+        <div id="bottom-bar">
+            <div id="bottom-nav">
+                <div id="quick-nav-menubar">
+                    <ul class="menu LtoR" id="quick-nav-controller">
+                        <li>
+                            <a class="toggle-unimplemented-features" href="#">Toggle Unimplemented
+                                Features </a>
+                        </li>
+                        <li>
+                            <a class="toggle-debug" href="#">Debug Console</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <script src="http://dev.virtualearth.net/mapcontrol/mapcontrol.ashx" type="text/javascript"
+        />
+    </view:container>
+</view:module>

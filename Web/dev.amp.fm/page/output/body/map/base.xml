@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<page:body xmlns:page="http://atomictalk.org/page" xmlns:body="http://atomictalk.org/page/output/body">
+    <body:onload action="onLoad();" />
+    <body:onresize action="onResize();" />
+    <body:layout>
+        <layout:view xmlns:layout="http://atomictalk.org/page/view/layout">
+            <view:module xmlns:view="http://atomictalk.org/page/view">
+                <view:container>
+                    <view:module id="header" src="/page/view/module/header/map/base.xml" />
+                    <view:module id="body" src="/page/view/form/event.xml" />
+                </view:container>
+            </view:module>
+        </layout:view>
+    </body:layout>
+</page:body>

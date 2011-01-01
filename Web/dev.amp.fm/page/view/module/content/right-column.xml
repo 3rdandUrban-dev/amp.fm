@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<view:module xmlns:view="http://atomictalk.org/page/view" xmlns:fb="http://www.facebook.com/2008/fbml" >
+  <div id="twtr-search-widget"></div>
+  <script src="http://widgets.twimg.com/j/1/widget.js"></script>
+  <link href="http://widgets.twimg.com/j/1/widget.css" type="text/css" rel="stylesheet"></link>
+  <script>
+    new TWTR.Widget({
+    search: M_LOCATION.concat(' OR #').concat(M_LOCATION),
+    id: 'twtr-search-widget',
+    loop: true,
+    title: 'What\'s being said about...',
+    subject: M_LOCATION,
+    width: 200,
+    height: 300,
+    theme: {
+    shell: {
+    background: '#627795',
+    color: '#ffffff'
+    },
+    tweets: {
+    background: '#ffffff',
+    color: '#444444',
+    links: '#1985b5'
+    }
+    }
+    }).render().start();
+  </script>
+  <div id="facebook-widget-container" style="margin-top:2px">
+    <fb:fan profile_id="19214848320" stream="1" connections="6" width="200" height="554"/>
+  </div>
+</view:module>

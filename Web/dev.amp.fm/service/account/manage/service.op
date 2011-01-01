@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/service/transform/controller/account/manage/base.xslt"?>
+<service:operation xmlns:operation="http://xameleon.org/service/operation" xmlns:param="http://xameleon.org/service/session/param"
+    xmlns:manage="http://xameleon.org/service/account/manage" xmlns:service="http://xameleon.org/service">
+    <operation:manage>
+        <manage:update name="{query-string:name}" location="{query-string:location}" />
+    </operation:manage>
+</service:operation>
+

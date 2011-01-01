@@ -1,0 +1,113 @@
+<?xml version="1.0"?>
+<view:module id="footer-module" xmlns:view="http://atomictalk.org/page/view">
+  <!--<li id="footer" class="four-rounded-corners">
+    <ul class="menu LtoR">
+      <li>
+        <dl class="footer-link">
+          <dt>Site Links</dt>
+          <dd>
+            <a href="/">Home</a>
+          </dd>
+          <dd>
+            <a href="/tour">Take a Tour</a>
+          </dd>
+          <dd>
+            <a href="/search">Search amp.fm</a>
+          </dd>
+          
+          <dd>
+            <a href="http://m.amp.fm/">amp.fm Mobile</a>
+          </dd>
+          <dd>
+            <a href="http://iphone.amp.fm/">amp.fm for iPhone</a>
+          </dd>
+          
+        </dl>
+        <dl class="footer-link">
+          <dt>Help</dt>
+          
+          <dd>
+            <a href="/faq">Frequently Asked Questions</a>
+          </dd>
+          <dd>
+            <a href="/bugreport" class="menu-link">Report a Website Bug</a>
+          </dd>
+        </dl>
+      </li>
+      <li>
+        <dl class="footer-link">
+          <dt>The Skinny</dt>
+          <dd>
+            <a href="/about" style="margin-right: 0.6em;">About Us</a>
+          </dd>
+          <dd>
+            <a href="/contact">Contact Us</a>
+          </dd>
+          <dd>
+            <a href="/guidelines">Community Guidelines</a>
+          </dd>
+          <dd>
+            <a href="http://blog.amp.fm">The amp.fm Blog</a>
+          </dd>
+          <dd>
+            <a href="/jobs">Jobs at amp.fm</a>
+          </dd>
+          <dd>
+            <a href="/advertise">Advertise on amp.fm</a>
+          </dd>
+        </dl>
+        <dl class="footer-link">
+          <dt>amp.fm for Musicians</dt>
+          <dd>
+            <a href="/musicians/getting-started" style="margin-right: 0.6em;">Getting Started</a>
+          </dd>
+          
+        </dl>
+        
+      </li>
+      <li>
+        <dl class="footer-link">
+          <dt>amp.fm Tools</dt>
+          <dd>
+            <a href="/tools/">All amp.fm Tools</a>
+          </dd>
+          <dd>
+            <a href="/twitter/">Twitter Feeds</a>
+          </dd>
+          <dd style="margin-top: 1em;">
+            <a href="http://developer.amp.fm/api">API for Developers</a>
+          </dd>
+        </dl>
+      </li>
+      <li>
+        <dl class="footer-link">
+          <dt>amp.fm Store</dt>
+          <dd>Get hats, shirts, hoodies, stickers, and more at the <a
+            href="http://store.amp.fm">amp.fm Store</a>.</dd>
+          
+        </dl>
+        <dl class="footer-link">
+          <dt>Labs</dt>
+          <dd>
+            <a href="http://labs.amp.fm/">amp.fm Labs</a>
+          </dd>
+        </dl>
+      </li>
+    </ul>
+  </li>-->
+  <li style="display: block; height:50px;width:100%;position:relative;top:5px;left:0;"/>
+  <!--<view:container>
+    <view:item>
+      <OBJECT classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://fpdownload.macromedia.com/get/flashplayer/current/swflash.cab" id="Player_eaefe27b-4a48-42c6-b727-babbbdd28ecc" WIDTH="100%" HEIGHT="100%">
+        <PARAM NAME="movie" VALUE="http://ws.amazon.com/widgets/q?ServiceVersion=20070822&amp;MarketPlace=US&amp;ID=V20070822%2FUS%2Fxsltblogcom-20%2F8007%2Feaefe27b-4a48-42c6-b727-babbbdd28ecc&amp;Operation=GetDisplayTemplate"/>
+        <PARAM NAME="quality" VALUE="high"/>
+        <PARAM NAME="bgcolor" VALUE="#FFFFFF"/>
+        <PARAM NAME="allowscriptaccess" VALUE="always"/>
+        <embed src="http://ws.amazon.com/widgets/q?ServiceVersion=20070822&amp;MarketPlace=US&amp;ID=V20070822%2FUS%2Fxsltblogcom-20%2F8007%2Feaefe27b-4a48-42c6-b727-babbbdd28ecc&amp;Operation=GetDisplayTemplate" id="Player_eaefe27b-4a48-42c6-b727-babbbdd28ecc" quality="high" bgcolor="#ffffff" name="Player_eaefe27b-4a48-42c6-b727-babbbdd28ecc" allowscriptaccess="always" type="application/x-shockwave-flash" align="middle" height="100%" width="100%"/>
+      </OBJECT>
+      <NOSCRIPT>
+        <A HREF="http://ws.amazon.com/widgets/q?ServiceVersion=20070822&amp;MarketPlace=US&amp;ID=V20070822%2FUS%2Fxsltblogcom-20%2F8007%2Feaefe27b-4a48-42c6-b727-babbbdd28ecc&amp;Operation=NoScript">Amazon.com Widgets</A>
+      </NOSCRIPT>
+    </view:item>
+  </view:container>-->
+</view:module>

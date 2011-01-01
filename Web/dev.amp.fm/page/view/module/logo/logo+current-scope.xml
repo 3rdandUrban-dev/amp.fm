@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<view:module type="application/atomictalk+xhtml" xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:view="http://atomictalk.org/page/view">
+    <div
+        style="text-align:left;position:absolute;bottom:-25px;left:-21px;display:inline;font-size:1.2em;color:#333;font-weight:600;z-index:1000"
+        class="location">
+        <img style="margin-bottom:3px" src="@@static@@/images/amp.fm-logo-no_slogan.png"/><!-- <span style="margin-left:-155px"><a href="/">@@current.title@@</a></span> -->
+    </div>
+</view:module>

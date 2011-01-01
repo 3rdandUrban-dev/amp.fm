@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<view:module class="base" id="instance" xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:geo="http://nuxleus.com/geo" xmlns:doc="http://atomictalk.org/feed/doc"
+    xmlns:view="http://atomictalk.org/page/view">
+    <div id="eventform">
+        <h2>Upload a new file</h2>
+        <form name="file-upload" id="file-upload" method="post" action="/service/media/create/" enctype="multipart/form-data">
+            <input type="hidden" name="return_url" id="return_url" value="/media"/>
+            <table id="events">
+                <tr>
+                    <td style="vertical-align:top;">Media File Name:</td>
+                    <td>
+                        <input type="text" name="name" id="name" size="50"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="vertical-align:top;">Description:</td>
+                    <td>
+                        <input type="text" name="description" id="description" size="50"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="vertical-align:top;">Tags:</td>
+                    <td>
+                        <input type="text" name="tags" id="tags" size="50"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="vertical-align:top;">File Location:</td>
+                    <td>
+                        <input type="file" name="mediafile" id="mediafile" size="50"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="submit" value="Upload"/>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</view:module>

@@ -1,0 +1,54 @@
+div.toolTip {
+/* This is the hook that the jQuery script will use */
+    padding-right: 20px;
+/* This is need to make sure that the help icon is always visible */
+    background: transparent url('/static/images/help.gif') no-repeat right;
+    color: #3366FF;
+    cursor: help;
+    position: relative;
+    z-index:100000;
+/* This contains the .toolTipWrapper div that is absolutely positioned */
+}
+div.toolTipWrapper {
+/* The wrapper holds its insides together */
+    width: 175px;
+    position: absolute;
+/* Absolute will make the tooltip float above other content in the page */
+    top: 20px;
+    left: -22px;
+    display: none;
+/* It has to be displayed none so that the jQuery fadein and fadeout functions will work */
+    color: #FFF;
+    font-size: 8pt;
+    z-index:100000;
+    display:block;
+/* A font size is needed to maintain consistancy */
+}
+div.toolTipTop {
+/* Top section of the tooltip */
+    width: 175px;
+    height: 12px;
+    background: transparent url('/static/images/balloon-arrow-up.png') 25px 0 no-repeat;
+    z-index:1;
+    margin-bottom:-1px;
+    position:relative;
+    top:-2px;
+    left:0;
+}
+div.toolTipBody {
+/* Middle section of the tooltip */
+    width:175px;
+    height:auto;
+    background: #C60;
+    border:1px solid #C40;
+    z-index:0;
+    position:relative;
+    top:-2px;
+    left:0;
+}
+div.toolTipMessage {
+/* Bottom Section of the tooltip */
+    padding: 4px 10px;
+    color:#FFF;
+    font-weight:400;
+}

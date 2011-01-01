@@ -1,0 +1,3 @@
+#!/bin/bash
+
+wget http://geolite.maxmind.com/download/geoip/database/GeoLiteCity.dat.gz && mv GeoLiteCity.dat GeoLiteCity.dat.previous  && gunzip GeoLiteCity.dat.gz

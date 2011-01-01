@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page:body xmlns:page="http://atomictalk.org/page"
+  xmlns:body="http://atomictalk.org/page/output/body">
+  <body:layout xmlns:view="http://atomictalk.org/page/view">
+    <view:module id="background" src="/page/view/module/background/base.xml" style="z-index:0"/>
+    <view:module id="body" src="/page/view/module/body/base.xml" style="z-index:1"/>
+    <view:module id="view-map" src="/page/view/module/map/view-map.xml" style="z-index:1" class="opacity-95"/>
+    <script src="http://dev.virtualearth.net/mapcontrol/mapcontrol.ashx" type="text/javascript"/>
+  </body:layout>
+</page:body>

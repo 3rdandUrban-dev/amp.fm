@@ -1,0 +1,123 @@
+<?xml version="1.0"?>
+<view:module class="base" id="header" xmlns:view="http://atomictalk.org/page/view">
+  <view:container>
+    <div id="top-bar">
+      <div id="top-nav">
+        <div id="top-nav-left">
+          <ul class="menu LtoR" id="top-nav-menu">
+            <li>/</li>
+            <li class="label">amp.fm</li>
+          </ul>
+        </div>
+        <div id="top-nav-right">
+          <ul class="menu LtoR" id="top-nav-menu"></ul>
+        </div>
+      </div>
+      <div id="image">
+        <div>
+          <img id="ampfm_logo" src="/images/amp.fm_small_01.png" />
+        </div>
+      </div>
+      <div id="location-nav">
+        <div id="get-plugged-in">
+          <div id="image_get-plugged-in">
+            <img src="/images/amp.fm_small_02.png" />
+          </div>
+          <div id="to">
+            <span id="to-location">TO</span>
+            <span id="location-label">SALT LAKE CITY</span>
+          </div>
+        </div>
+        <div id="view-nav">
+          <ul class="menu LtoR" id="view-menu">
+            <li id="today-selector" class="selected" onclick="updateContentFrame('today-selector', 'today');">today</li>
+            <li id="newspaper-selector" class="not-selected" onclick="updateContentFrame('newspaper-selector', 'newspaper');">newspaper</li>
+            <li id="map-selector" class="not-selected" onclick="updateContentFrame('map-selector', 'map');loadMap(true);">map</li>
+            <li id="calendar-selector" class="not-selected" onclick="updateContentFrame('calendar-selector', 'bungee');loadBungee('widelens');">calendar</li>
+            <li id="vertical-timeline-selector" class="not-selected" onclick="updateContentFrame('vertical-timeline-selector', 'vertical-timeline');">vertical timeline</li>
+          </ul>
+        </div>
+        <div id="blip-filters">
+          <span class="time">blip filters:</span>
+        </div>
+      </div>
+    </div>
+    <div id="center">
+      <div id="today" style="position:absolute;top:0px;bottom:0px;left:0;right:0;" class="newspaper">
+        <div id="today-content" style="position:absolute;top:0px;left:4px;width:20%;height:98%;margin:5px auto;background:#FFF;" class="opacity-95" />
+        <div id="today-center-content" style="position:absolute;top:0px;left:0;right:0;width:59%;height:98%;margin:5px auto;background:#FFF;" class="opacity-95" />
+        <div id="today-right-content" style="position:absolute;top:0px;right:4px;width:20%;height:98%;margin:5px auto;background:#FFF;" class="opacity-95" />
+      </div>
+      <div id="newspaper" style="position:absolute;top:0px;bottom:0px;left:0;right:0;" class="newspaper">
+        <div id="newspaper-content" style="position:absolute;top:0px;left:4px;width:20%;height:98%;margin:5px auto;background:#FFF;" class="opacity-95" />
+        <div id="newspaper-center-content" style="position:absolute;top:0px;left:0;right:0;width:59%;height:98%;margin:5px auto;background:#FFF;" class="opacity-95" />
+        <div id="newspaper-right-content" style="position:absolute;top:0px;right:4px;width:20%;height:98%;margin:5px auto;background:#FFF;" class="opacity-95" />
+      </div>
+      <div id="map" class="map" />
+      <div id="bungee" style="display:none;position:absolute;top:0px;bottom:0px;left:0;right:0;" class="bungee">
+        <iframe style="width:100%;height:100%" id="widelens" marginheight="0" marginwidth="0" frameborder="0" />
+      </div>
+      <div id="vertical-timeline" style="position:absolute;top:0px;bottom:0px;left:0;right:0;" class="vertical-timeline">
+
+      </div>
+    </div>
+    <!-- <div id="side-nav">
+      <ul class="menu TtoB" id="side-nav">
+        <li id="today-selector" class="selected" onclick="updateContentFrame('today-selector', 'today');">today</li>
+        <li id="newspaper-selector" class="not-selected" onclick="updateContentFrame('newspaper-selector', 'newspaper');">newspaper</li>
+        <li id="map-selector" class="not-selected" onclick="updateContentFrame('map-selector', 'map');loadMap(true);">map</li>
+        <li id="calendar-selector" class="not-selected" onclick="updateContentFrame('calendar-selector', 'bungee');loadBungee('widelens');">calendar</li>
+        <li id="vertical-timeline-selector" class="not-selected" onclick="updateContentFrame('vertical-timeline-selector', 'vertical-timeline');">vertical timeline</li>
+      </ul>
+    </div> -->
+    <div id="bottom-bar">
+      <div>
+        <div id="timeline" />
+        <div id="photos" style="display:none" onmouseover="onCarouselMouseOver();">
+          <table id="carousel-content" border="0" cellspacing="0" cellpadding="0">
+            <tr />
+          </table>
+        </div>
+
+        <div id="tracks" style="display:none;position:absolute;top:0px;bottom:0px;left:0;right:0;" class="messages">
+
+        </div>
+
+        <div id="videos" style="display:none;position:absolute;top:0px;bottom:0px;left:0;right:0;" class="messages">
+
+        </div>
+        <div id="playlists" style="display:none;position:absolute;top:0px;bottom:0px;left:0;right:0;" class="subscriptions">
+
+        </div>
+        <div id="subscriptions" style="display:none;position:absolute;top:0px;bottom:0px;left:0;right:0;" class="subscriptions">
+
+        </div>
+        <div id="messages" style="display:none;position:absolute;top:0px;bottom:0px;left:0;right:0;" class="messages">
+
+        </div>
+      </div>
+      <div id="bottom-nav">
+        <ul class="menu LtoR" id="quick-view-menu">
+          <li id="timeline-selector" class="selected" onclick="updateQuickViewFrame('timeline-selector', 'timeline');">timeline</li>
+          <li id="photos-selector" class="not-selected" onclick="updateQuickViewFrame('photos-selector', 'photos');">photos</li>
+          <li id="tracks-selector" class="not-selected" onclick="updateQuickViewFrame('tracks-selector', 'tracks');">tracks</li>
+          <li id="videos-selector" class="not-selected" onclick="updateQuickViewFrame('videos-selector', 'videos');">videos</li>
+          <li id="messages-selector" class="not-selected" onclick="updateQuickViewFrame('messages-selector', 'messages');">messages</li>
+          <li id="subscriptions-selector" class="not-selected" onclick="updateQuickViewFrame('subscriptions-selector', 'subscriptions');">subscriptions</li>
+          <li id="playlists-selector" class="not-selected" onclick="updateQuickViewFrame('playlists-selector', 'playlists');">playlists</li>
+        </ul>
+<!--         <div style="width:130px; height:21px; position:absolute;bottom:2px;right:5px;z-index:300;display:inline;">
+          <object type="application/x-silverlight-2-b1" width="130" height="21">
+            <param name="source" value="Inplay.xap" />
+            <param name="background" value="#00000000" />
+            <param name="windowless" value="true" />
+            <param name="initParams" value="id=Video,source=PlayList.asx,background=50718093,volume=0.7,play=true" />
+            <a href="http://go.microsoft.com/fwlink/?LinkID=108182">
+              <img src="http://go.microsoft.com/fwlink/?LinkId=108181" alt="Get Microsoft Silverlight" />
+            </a>
+          </object>
+        </div> -->
+      </div>
+    </div>
+  </view:container>
+</view:module>

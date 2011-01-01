@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<view:module type="application/atomictalk+xhtml" xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:menu="http://atomictalk.org/page/view/menu" xmlns:view="http://atomictalk.org/page/view"
+    xmlns:doc="http://atomictalk.org/feed/doc">
+    <view:container id="header-primary" style="TtoB">
+        <div id="top-container">
+            <view:module id="top-nav" src="/page/view/menu/navigation/top-nav/base.xml"/>
+            <div id="view-nav" style="position:relative">
+                <view:module id="logo_current-scope" src="/page/view/module/logo/logo+current-scope.xml"/>
+                <view:module id="page-view_properties" src="/page/view/module/header/page-view+properties.xml"/>
+            </div>
+        </div>
+    </view:container>
+</view:module>
+

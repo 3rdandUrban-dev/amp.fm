@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<page:body xmlns:page="http://atomictalk.org/page" xmlns:body="http://atomictalk.org/page/output/body">
+    <body:layout>
+        <layout:view xmlns:layout="http://atomictalk.org/page/view/layout">
+            <view:module xmlns:view="http://atomictalk.org/page/view">
+                <view:container>
+                    <view:module id="header" src="/page/view/module/xslttest/base.xml" />
+                </view:container>
+            </view:module>
+        </layout:view>
+    </body:layout>
+</page:body>

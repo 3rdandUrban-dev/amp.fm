@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<view:module class="base" xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:geo="http://nuxleus.com/geo" xmlns:doc="http://atomictalk.org/feed/doc"
+    xmlns:view="http://atomictalk.org/page/view">
+    <div id="eventform">
+        <form method="post" action="/service/event/create/service.op">
+            <fieldset>
+                <legend>Add a new event</legend>
+                <input type="hidden" name="return_url" id="return_url" value="/profile/event-manager/"/>
+                <table id="events">
+                    <tr>
+                        <td style="vertical-align:top;">Name: </td>
+                        <td>
+                            <input class="text" type="text" name="name" id="name" style="width:400px"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="vertical-align:top;">
+                            <label for="location">Event City: </label>
+                        </td>
+                        <td style="vertical-align:top;">
+                            <input class="text" type="text" id="location" value="" style="width:200px"/>
+                            <label for="venue" style="margin-left:3px">Venue: </label>
+                            <select class="text" name="venue" id="venue">
+                                <option value="thedepot">The Depot</option>
+                                <option value="blues">House of Blues</option>
+                                <option value="jazz">Monks</option>
+                                <option value="electronica">Dan's Place</option>
+                                <option value="rock">Boom Boom Room</option>
+                                <option value="funk">Joe's Bar &amp; Grill</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="vertical-align:top;">Date of Event:</td>
+                        <td style="vertical-align:top;">
+                            <input type="text" name="startdate" class="text calendarSelectDate" id="startdate" size="45"/>
+                            <div style="color:#663300;font-weight:600;margin:5px 0 0;text-align:center" id="your_date" class="empty"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="vertical-align:top;">Time of Event:</td>
+                        <td style="vertical-align:top;">
+                            <select name="starttime" id="starttime" class="text calendarSelectDate">
+                                <option value="0015">12:15am</option>
+                                <option value="0030">12:30am</option>
+                                <option value="0045">12:45am</option>
+                                <option value="0100">1:00am</option>
+                                <option value="0115">1:15am</option>
+                                <option value="0130">1:30am</option>
+                                <option value="0145">1:45am</option>
+                                <option value="0200">2:00am</option>
+                                <option value="0215">2:15am</option>
+                                <option value="0230">2:30am</option>
+                                <option value="0245">2:45am</option>
+                                <option value="0300">3:00am</option>
+                                <option value="0315">3:15am</option>
+                                <option value="0330">3:30am</option>
+                                <option value="0345">3:45am</option>
+                                <option value="0400">4:00am</option>
+                                <option value="0415">4:15am</option>
+                                <option value="0430">4:30am</option>
+                                <option value="0445">4:45am</option>
+                                <option value="0500">5:00am</option>
+                                <option value="0515">5:15am</option>
+                                <option value="0530">5:30am</option>
+                                <option value="0545">5:45am</option>
+                                <option value="0600">6:00am</option>
+                                <option value="0615">6:15am</option>
+                                <option value="0630">6:30am</option>
+                                <option value="0645">6:45am</option>
+                                <option value="0700">7:00am</option>
+                                <option value="0715">7:15am</option>
+                                <option value="0730">7:30am</option>
+                                <option value="0745">7:45am</option>
+                                <option value="0800">8:00am</option>
+                                <option value="0815">8:15am</option>
+                                <option value="0830">8:30am</option>
+                                <option value="0845">8:45am</option>
+                                <option value="0900">9:00am</option>
+                                <option value="0915">9:15am</option>
+                                <option value="0930">9:30am</option>
+                                <option value="0945">9:45am</option>
+                                <option value="1000">10:00am</option>
+                                <option value="1015">10:15am</option>
+                                <option value="1030">10:30am</option>
+                                <option value="1045">10:45am</option>
+                                <option value="1100">11:00am</option>
+                                <option value="1115">11:15am</option>
+                                <option value="1130">11:30am</option>
+                                <option value="1145">11:45am</option>
+                                <option value="1200">noon</option>
+                                <option value="1215">12:15pm</option>
+                                <option value="1230">12:30pm</option>
+                                <option value="1245">12:45pm</option>
+                                <option value="1300">1:00pm</option>
+                                <option value="1315">1:15pm</option>
+                                <option value="1330">1:30pm</option>
+                                <option value="1345">1:45pm</option>
+                                <option value="1400">2:00pm</option>
+                                <option value="1415">2:15pm</option>
+                                <option value="1430">2:30pm</option>
+                                <option value="1445">2:45pm</option>
+                                <option value="1500">3:00pm</option>
+                                <option value="1515">3:15pm</option>
+                                <option value="1530">3:30pm</option>
+                                <option value="1545">3:45pm</option>
+                                <option value="1600">4:00pm</option>
+                                <option value="1615">4:15pm</option>
+                                <option value="1630">4:30pm</option>
+                                <option value="1645">4:45pm</option>
+                                <option value="1700">5:00pm</option>
+                                <option value="1715">5:15pm</option>
+                                <option value="1730">5:30pm</option>
+                                <option value="1745">5:45pm</option>
+                                <option value="1800">6:00pm</option>
+                                <option value="1815">6:15pm</option>
+                                <option value="1830">6:30pm</option>
+                                <option value="1845">6:45pm</option>
+                                <option value="1900">7:00pm</option>
+                                <option value="1915">7:15pm</option>
+                                <option value="1930">7:30pm</option>
+                                <option value="1945">7:45pm</option>
+                                <option value="2100">8:00pm</option>
+                                <option value="2115">8:15pm</option>
+                                <option value="2130">8:30pm</option>
+                                <option value="2145">8:45pm</option>
+                                <option value="2100">9:00pm</option>
+                                <option value="2115">9:15pm</option>
+                                <option value="2130">9:30pm</option>
+                                <option value="2145">9:45pm</option>
+                                <option value="2200">10:00pm</option>
+                                <option value="2215">10:15pm</option>
+                                <option value="2230">10:30pm</option>
+                                <option value="2245">10:45pm</option>
+                                <option value="2300">11:00pm</option>
+                                <option value="2315">11:15pm</option>
+                                <option value="2330">11:30pm</option>
+                                <option value="2345">11:45pm</option>
+                                <option value="0000">midnight</option>
+                            </select>
+                            <label for="endtime"> to</label>
+                            <select name="endtime" id="endtime" class="text calendarSelectDate">
+                                <option value="0015">12:15am</option>
+                                <option value="0030">12:30am</option>
+                                <option value="0045">12:45am</option>
+                                <option value="0100">1:00am</option>
+                                <option value="0115">1:15am</option>
+                                <option value="0130">1:30am</option>
+                                <option value="0145">1:45am</option>
+                                <option value="0200">2:00am</option>
+                                <option value="0215">2:15am</option>
+                                <option value="0230">2:30am</option>
+                                <option value="0245">2:45am</option>
+                                <option value="0300">3:00am</option>
+                                <option value="0315">3:15am</option>
+                                <option value="0330">3:30am</option>
+                                <option value="0345">3:45am</option>
+                                <option value="0400">4:00am</option>
+                                <option value="0415">4:15am</option>
+                                <option value="0430">4:30am</option>
+                                <option value="0445">4:45am</option>
+                                <option value="0500">5:00am</option>
+                                <option value="0515">5:15am</option>
+                                <option value="0530">5:30am</option>
+                                <option value="0545">5:45am</option>
+                                <option value="0600">6:00am</option>
+                                <option value="0615">6:15am</option>
+                                <option value="0630">6:30am</option>
+                                <option value="0645">6:45am</option>
+                                <option value="0700">7:00am</option>
+                                <option value="0715">7:15am</option>
+                                <option value="0730">7:30am</option>
+                                <option value="0745">7:45am</option>
+                                <option value="0800">8:00am</option>
+                                <option value="0815">8:15am</option>
+                                <option value="0830">8:30am</option>
+                                <option value="0845">8:45am</option>
+                                <option value="0900">9:00am</option>
+                                <option value="0915">9:15am</option>
+                                <option value="0930">9:30am</option>
+                                <option value="0945">9:45am</option>
+                                <option value="1000">10:00am</option>
+                                <option value="1015">10:15am</option>
+                                <option value="1030">10:30am</option>
+                                <option value="1045">10:45am</option>
+                                <option value="1100">11:00am</option>
+                                <option value="1115">11:15am</option>
+                                <option value="1130">11:30am</option>
+                                <option value="1145">11:45am</option>
+                                <option value="1200">noon</option>
+                                <option value="1215">12:15pm</option>
+                                <option value="1230">12:30pm</option>
+                                <option value="1245">12:45pm</option>
+                                <option value="1300">1:00pm</option>
+                                <option value="1315">1:15pm</option>
+                                <option value="1330">1:30pm</option>
+                                <option value="1345">1:45pm</option>
+                                <option value="1400">2:00pm</option>
+                                <option value="1415">2:15pm</option>
+                                <option value="1430">2:30pm</option>
+                                <option value="1445">2:45pm</option>
+                                <option value="1500">3:00pm</option>
+                                <option value="1515">3:15pm</option>
+                                <option value="1530">3:30pm</option>
+                                <option value="1545">3:45pm</option>
+                                <option value="1600">4:00pm</option>
+                                <option value="1615">4:15pm</option>
+                                <option value="1630">4:30pm</option>
+                                <option value="1645">4:45pm</option>
+                                <option value="1700">5:00pm</option>
+                                <option value="1715">5:15pm</option>
+                                <option value="1730">5:30pm</option>
+                                <option value="1745">5:45pm</option>
+                                <option value="1800">6:00pm</option>
+                                <option value="1815">6:15pm</option>
+                                <option value="1830">6:30pm</option>
+                                <option value="1845">6:45pm</option>
+                                <option value="1900">7:00pm</option>
+                                <option value="1915">7:15pm</option>
+                                <option value="1930">7:30pm</option>
+                                <option value="1945">7:45pm</option>
+                                <option value="2100">8:00pm</option>
+                                <option value="2115">8:15pm</option>
+                                <option value="2130">8:30pm</option>
+                                <option value="2145">8:45pm</option>
+                                <option value="2100">9:00pm</option>
+                                <option value="2115">9:15pm</option>
+                                <option value="2130">9:30pm</option>
+                                <option value="2145">9:45pm</option>
+                                <option value="2200">10:00pm</option>
+                                <option value="2215">10:15pm</option>
+                                <option value="2230">10:30pm</option>
+                                <option value="2245">10:45pm</option>
+                                <option value="2300">11:00pm</option>
+                                <option value="2315">11:15pm</option>
+                                <option value="2330">11:30pm</option>
+                                <option value="2345">11:45pm</option>
+                                <option value="0000">midnight</option>
+                            </select>
+                            <script type="text/javascript">
+                                <![CDATA[
+                          $('#starttime > option[@value = '.concat((getCurrentHour() + 1).toString()).concat('00').concat(']')).attr('selected','true');
+                          $('#endtime > option[@value='.concat((getCurrentHour() + 3).toString()).concat('00').concat(']')).attr('selected','true');
+                          ]]>
+                            </script>
+                            <div style="display:inline;float:right">
+                                <label for="genre" style="margin-left:5px">Genre: </label>
+                                <select class="text" name="genre" id="genre">
+                                    <option value="blues">Blues</option>
+                                    <option value="jazz">Jazz</option>
+                                    <option value="electronica">Electronica</option>
+                                    <option value="rock">Rock</option>
+                                    <option value="funk">Funk</option>
+                                    <option value="hiphop">Hip-Hop</option>
+                                </select>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="vertical-align:top;">Description: </td>
+                        <td>
+                            <textarea class="text" name="description" style="width:400px" rows="5" id="description"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="vertical-align:top;">Tags:</td>
+                        <td style="vertical-align:top;">
+                            <input class="text" type="text" name="tags" id="tags"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="vertical-align:top;">
+                            <input type="submit" value="Create Event" style="width:10em;float:right;"/>
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+        </form>
+        <div id="event-listing-container">
+            <doc:event user="@@current.user@@"/>
+        </div>
+    </div>
+</view:module>
